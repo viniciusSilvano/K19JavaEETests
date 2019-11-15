@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<h:head >
+		<title> Calculadora - Soma </title>
+	</h:head >
+	<h1>Calculadora - Soma</h1>
+	<h:body>
+		<h:form>
+			<h:outputLabel value="Valor A:"/>
+			<h:inputText value="#{calculadoraMB.a}"/>
+			
+			<h:outputLabel value="Valor B:"/>
+			<h:inputText value="#{calculadoraMB.b}"/>
+			
+			<h:commandButton action="#{calculadoraMB.soma()}" value="soma"/>
+			
+			<h:outputLabel value="Resultado :"/>
+			<h:outputText value="#{calculadoraMB.resultado}"/>
+		 </h:form>
+	</h:body>
+</html>
